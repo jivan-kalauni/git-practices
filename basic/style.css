@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+p {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  font-weight: 400;
+  color: #606060;
+}
+
+.extra-div h2,
+.servicediv h2 {
+  font-size: 0.9rem;
+  margin: 20px 0 15px 0;
+  font-weight: bold;
+  line-height: 1.1;
+  word-spacing: 4px;
+}
+
+.header {
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(
+      rgba(0, 168, 255, 0.4),
+      rgba(0, 168, 255, 0.4)
+    ),
+    url(/header.jpg);
+  clip-path: polygon(100% 0, 100% 77%, 50% 100%, 0 75%, 0 0);
+  position: relative;
+}
+.header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0.4;
+  z-index: -1;
+  background: linear-gradient(to right, #1e5799 0%, #2ccdbb 0%, #16c9f6 100%);
+}
+.navbar::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0.4;
+  z-index: -1;
+  background: linear-gradient(to right, #1e5799 0%, #2ccdbb 0%, #16c9f6 100%);
+}
+
+.nav-item a {
+  color: #fff !important;
+  font-weight: bold;
+}
+.header-section {
+  width: 100%;
+  height: inherit;
+  color: white;
+  text-align: center;
+}
+.center-div {
+  height: auto;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+}
+
+.header-buttons a {
+  text-decoration: none;
+  border: 1px solid white;
+  margin: 0 5px;
+  padding: 12px 35px;
+  border-radius: 100px;
+  color: white;
+  font-size: 1rem;
+  outline: none;
+  font-weight: bold;
+  line-height: 1.4;
+  text-align: center;
+}
+.header-buttons a:hover {
+  color: #50d1c0;
+  background-color: white;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+}
+.center-div p {
+  font-size: 1.3rem;
+  padding: 10px 0 20px 0;
+  color: white;
+}
+.header-extradiv {
+  width: 100%;
+  height: auto;
+  margin: 100px 0;
+  text-align: center;
+}
+
+.extra-div {
+  background-color: #fff;
+  border: medium none;
+  padding: 50px !important;
+  border-radius: 3px;
+  transition: 0.3s;
+}
+
+.extra-div:hover {
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+  transform: translateY(-20px);
+}
+.serviceoffer {
+  background-color: #f7f7f9;
+  padding: 50px 0;
+  margin-bottom: 50px;
+}
+.headings {
+  margin-bottom: 50px;
+}
+.headings h1 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.name h1 {
+  color: #2e2e2e;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+.service-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: blue;
+}
+.projectwork {
+  margin: 100px 0;
+}
+.projectwork h1 {
+  font-size: 2rem;
+  text-align: center;
+}
+li {
+  list-style: none;
+}
+.pricing {
+  width: 100%;
+  height: 100vh;
+  padding: 50px;
+  position: relative;
+}
+.pricing::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  /* opacity: 0.4; */
+  z-index: -1;
+  background: linear-gradient(160deg, #16c9f6 55%, #fff 0%);
+}
+span {
+  font-size: 40px;
+  line-height: 1;
+  color: #606060;
+}
+.card {
+  transition: 0.4s ease;
+}
+.card-header {
+  font-size: 1.6rem;
+  font-weight: bold;
+  background-color: #fff !important;
+  padding: 25px 0 !important;
+}
+.card-body {
+  padding: 30px 0 !important;
+}
